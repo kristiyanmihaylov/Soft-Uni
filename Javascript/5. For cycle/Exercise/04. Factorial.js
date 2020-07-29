@@ -8,4 +8,4 @@ function factorial(arg1){
     }
     console.log(result);
 }
-factorial('8');
+factorial('4');
