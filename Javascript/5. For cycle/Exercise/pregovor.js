@@ -14,7 +14,7 @@ console.log(num); //8
 
 let perInfo = 'Hello, my name is Miro and I like JavaScript.';
 console.log(perInfo.length); // shows how many symbols are there
-console.log(perInfo[1]); // shows "e" b/c I must count from 0
+console.log(perInfo[0]); // shows "H" b/c I must count from 0
 
 // => there are not the same concepts
 // 1voto pokazva broikata simvoli a 0 ne e broika

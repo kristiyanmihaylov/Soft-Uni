@@ -1,0 +1,8 @@
+function numEnd(){
+    for(let i=1;i<=997;i++){
+        if(i%10===7){ //otpechatva chislata na 7
+            console.log(i);
+        }
+    }
+}
+numEnd();
