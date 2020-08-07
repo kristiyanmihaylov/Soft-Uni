@@ -7,8 +7,8 @@ function graduation(input) {
    let excluded = 0;
 
    while (grades <= 12) {
-      let grade = Number(input[index]); // za da e chislo
-      index++;
+      let grade = Number(input[index]); // za da e chislo ot masiva
+      index++; //za da indexa da se mesti napred
       if (grade < 4) {
          excluded++;
          if (excluded === 2) {
@@ -18,7 +18,7 @@ function graduation(input) {
          continue; //da produlji sled vlezliq if za while lopop
       }
       sum += grade;
-      grades++;
+      grades++; // za da vurvi na sledvashtata ocenka
    }
    if (excluded<2) { //ako excluded sa po malko ot 2 puti togava
       console.log(`${name} graduated. Average grade: ${((sum/12).toFixed(2))}`);
