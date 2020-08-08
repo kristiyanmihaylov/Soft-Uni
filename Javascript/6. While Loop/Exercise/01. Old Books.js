@@ -1,7 +1,7 @@
 function books(inputData){
 
-    let wantedBook = inputData[0];
-    let nextBook = inputData[1];
+    let wantedBook = inputData[0]; //lubimata kniga
+    let nextBook = inputData[1]; //start na turseneto
     let checkedBooks = 0;
 
     while(nextBook !=='No More Books'){
@@ -19,11 +19,8 @@ function books(inputData){
     }
 }
 books([ //tova e sintaksis za masiv
-    "The Spot",
-    "Hunger Games",
-    'Troy',
-    "Harry Potter",
-    "Torronto",
-    "Spotify",
-    "No More Books"
+    "Troy",
+    "Stronger",
+    "Life Style",
+    "Troy"
 ]); //taka e dobre za da vijdame dali imame masiv
