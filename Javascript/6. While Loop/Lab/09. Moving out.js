@@ -1,28 +1,32 @@
 function moving(input) {
     //Един кашон е с точни размери:  1m. x 1m. x 1m.
-    let widthFreeSpace = input[0]
-    let lengthFreeSpace = input[1]
-    let heigthFreeSpace = input[2]
-    let index = 3;
-    let boxes = input[index];
+    let index = 0;
+    let w = Number(input[index]);
     index++;
-    let capacity = widthFreeSpace * lengthFreeSpace * heigthFreeSpace;
-    let freeSpace = 0;
+    let l = Number(input[index]);
+    index++;
+    let h = Number(input[index]);
+    index++;
 
-    while (boxes !== 'Done') {
-        let boxesSpace = 0;
-        boxes = Number(input[index]);
+    let cubicSpace = widthFreeSpace * lengthFreeSpace * heigthFreeSpace;
+    let freeSpace = true;
+
+    let command = input[index];
+    index++;
+
+    while (command !== 'Done') {
+        let box = Number(command);
+        cubicSpace -= box;
+        if (cubicSpace < 0) {
+            freeSpace = false;
+            console.log();
+            break
+        }
+        command = input[index];
         index++;
-        boxesSpace += boxes;
-        continue;
     }
-    freeSpace = capacity - boxesSpace;
-    if (boxes === 'Done' && freeSpace > 0) {
-        freeSpace = Math.abs(capacity - boxes);
-        console.log(`${freeSpace} Cubic meters left.`);
-    } else if (freeSpace <= 0) {
-        freeSpace = Math.abs(capacity - boxes);
-        console.log(`No more free space! You need ${freeSpace} Cubic meters more.`);
+    if (freeSpace) {
+        console.log();
     }
 }
 moving([
