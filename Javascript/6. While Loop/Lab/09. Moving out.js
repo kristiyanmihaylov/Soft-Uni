@@ -8,8 +8,8 @@ function moving(input) {
     let h = Number(input[index]);
     index++;
 
-    let cubicSpace = widthFreeSpace * lengthFreeSpace * heigthFreeSpace;
-    let freeSpace = true;
+    let cubicSpace = w * l * h;
+    let isFreeSpace = true;
 
     let command = input[index];
     index++;
@@ -18,15 +18,15 @@ function moving(input) {
         let box = Number(command);
         cubicSpace -= box;
         if (cubicSpace < 0) {
-            freeSpace = false;
-            console.log();
-            break
+            isFreeSpace = false;
+            console.log(`No more free space! You need ${Math.abs(cubicSpace)} Cubic meters more.`);
+            break;
         }
         command = input[index];
         index++;
     }
-    if (freeSpace) {
-        console.log();
+    if (isFreeSpace) { //suzdavaiki buleva moga da q izpolzvam kato logichesko uslovie
+        console.log(`${cubicSpace} Cubic meters left.`);
     }
 }
 moving([

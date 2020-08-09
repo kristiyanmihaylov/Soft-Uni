@@ -1,21 +1,23 @@
 function books(inputData){
-
+    let index = 1;
     let wantedBook = inputData[0]; //lubimata kniga
-    let nextBook = inputData[1]; //start na turseneto
-    let checkedBooks = 0;
+    let nextBook = inputData[index]; //start na turseneto
+    index++;
+    let bookIsFound = false; //buleva za logika
 
     while(nextBook !=='No More Books'){
         if(nextBook === wantedBook){
+            bookIsFound = true;
             break;
         }
-        checkedBooks++;
-        nextBook=inputData[checkedBooks+1]; //taka smqta sledvashtata kniga
+        index++;
+        nextBook=inputData[index]; //taka smqta sledvashtata kniga
     }
-    if(nextBook === wantedBook){
-        console.log(`You checked ${checkedBooks} books and found it.`);
-    } else {
+    if(bookIsFound === false){
         console.log('The book you search is not here!');
-        console.log(`You checked ${checkedBooks} books.`);
+        console.log(`You checked ${index-1} books.`);
+    } else {
+        console.log(`You checked ${index-1} books and found it.`);
     }
 }
 books([ //tova e sintaksis za masiv
