@@ -15,15 +15,15 @@ function sumTwo(input) {
         }
         if (isFound) {
             break;
-        }//vsqko logichesko uslovie e edinstveno v for loop
-    }   // za da ako e vqrno da prekusne cikula kum izhod
+        } //vsqko logichesko uslovie e edinstveno v for loop
+    } // za da ako e vqrno da prekusne cikula kum izhod
     //ako ne e nameren znachi izvun for
-    if (!isFound) {//razlichno ot isFound
+    if (!isFound) { //razlichno ot isFound
         console.log(`${counter} combinations - neither equals ${magicNum}`);
     }
 }
 sumTwo([
-    '23',
-    '24',
-    '20'
+    '1',
+    '10',
+    '5'
 ]);
