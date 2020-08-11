@@ -1,16 +1,33 @@
 
+/*
+let flag = false;
+for (let j = 1; j <= 10; j++) {
+    for (let i = 1; i <= 20; i++) {
+        if (some condition) {
+            flag = true; //tuk breakva ot vutreshniq samo
+            break;
+        }
+    }
+    if (flag) { //kato znam che veche e true moga da izpolzvam i tuk
+        break;
+    }
+}
+
+for (let x = 1; x <= 10; x++) {
+    for (let y = 1; y <= 10; y++) {
+        let result = x * y;
+        console.log(`${x} * ${y} = ${result}`);
+    }
+}
 
 
+for (let h = 0; h <= 23; h++) {
+    for (let m = 0; m <= 59; m++) {
+        console.log(`${h}:${m}`);
+    }
+}
 
-
-
-
-
-
-
-
-
-/*let i=0;
+let i=0;
 while(i<=10){
     console.log('SoftUni');
     i--;
