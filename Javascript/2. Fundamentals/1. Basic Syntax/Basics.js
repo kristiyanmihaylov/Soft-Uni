@@ -1,4 +1,36 @@
-/*For Loops*/
+/*While Loop
+
+do{
+
+} while();
+
+let i = 0;
+while (i < 10) {
+  console.log(i);
+  i += 2;
+}
+
+let i = 0;
+while (true) {
+  console.log(i);
+  i += 2;
+
+  if (i < 10) {
+    break;
+  }
+}
+*/
+
+// Alt+Shift+F = clean code reposition
+
+/////////////////////////////////////////
+
+/*For Loops
+
+let repeat = 6;
+for(i=10;i>=repeat;i--){
+console.log(i);
+}
 
 function num(num1){
     for(num1=1;num1<=5;num1++){
@@ -6,6 +38,9 @@ function num(num1){
     }
 }
 num(1);
+
+*/
+//////////////////////////////////////////////////////
 
 /*Switch Function - use them not often at all*/
 /*
@@ -21,6 +56,8 @@ function mag(fruit){
 }
 mag('banana')
 */
+
+///////////////////////////////////////////
 
 /* IF ELSE FUNCTION */
 
