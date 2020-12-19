@@ -6,7 +6,8 @@ function myFunc() {
     console.log(myVar);
 
     if (myVar == 5) {
-        var result = 'some result'; //var ako iskam da go
+        var result = 'some result'; 
+        //var ako iskam da go
         // polzvam izvun if{} cikula
     }
 
@@ -15,9 +16,11 @@ function myFunc() {
         console.log(i);
     } //using var I can get the loop global
     */
+
     console.log('outside loop');
     console.log(result);
 }
+
 //global scope
 console.log('global scope');
 console.log(myVar);

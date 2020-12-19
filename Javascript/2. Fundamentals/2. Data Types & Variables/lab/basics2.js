@@ -1,12 +1,40 @@
-var someGlobal = 5;
-
 function myFunc() {
-    for (let i = 0; i < 10; i++) {
-        // 
-    }
+    console.log(myVar);
+    var myVar = 'peter';
+
 }
 myFunc();
 
+/*
+If Condition using var/let
+
+function myFunc() {
+    let myVar = 6;
+    console.log('inside function');
+    console.log(myVar);
+
+    if (myVar == 6) {
+        var result = 'some result';
+    }
+
+    console.log('outside loop');
+    console.log(result);
+}
+myFunc();
+*/
+
+/*
+Loop with Var or Let
+
+function myFunc() {
+    for (let i = 0; i < 10; i++) {
+        console.log(i);
+    }
+    console.log('outside loop');
+    console.log(i);
+}
+myFunc();
+*/
 
 /*
 var someGlobal = 5; 
@@ -14,7 +42,7 @@ var someGlobal = 5;
 // zashtoto se zakacha za globalniq file
 
 function myFunc() {
-    console.log(myVar);
+    console.log(myVar); !!!
 
     var myVar = 'peter';
 }
