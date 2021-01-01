@@ -9,6 +9,11 @@ Arrays - Sequences of Elements
 2. Operations
 
 1. Definition
+ 
+Array is a sequence of elements[0,1,2,3,4]
+----------------------------------------
+We store multiple values in one variable
+----------------------------------------
 
 Elements are numbered from 0 to length-1
 
